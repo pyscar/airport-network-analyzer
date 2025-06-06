@@ -1,5 +1,8 @@
 streamlit
 pandas
 networkx
+geopandas
+matplotlib
 folium
+seaborn
 streamlit-folium
