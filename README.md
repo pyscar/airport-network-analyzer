@@ -1,13 +1,17 @@
----
-
 # ✈️ Airport Network Analyzer
 
-An interactive **network analysis and visualization application** for exploring global airport connectivity, flight routes, and network efficiency using graph theory and geospatial mapping.
+An **interactive network analysis and visualization application** for exploring global airport connectivity, flight routes, and network efficiency using graph theory and geospatial mapping.
 
 Built with **Python, NetworkX, Folium, and Streamlit**, this project demonstrates how complex transportation networks can be analyzed, visualized, and queried through a user-friendly web interface.
 
 ---
-## Live Demo (Streamlit link)-> https://airport-network-analyzer-f3qxcwd9gnjmfvvgsuyxln.streamlit.app/
+
+## 🔗 Live Demo
+
+[Streamlit App](https://airport-network-analyzer-f3qxcwd9gnjmfvvgsuyxln.streamlit.app/)
+
+---
+
 ## 🚀 Features
 
 ### 1. Airport Directory
@@ -22,43 +26,51 @@ Built with **Python, NetworkX, Folium, and Streamlit**, this project demonstrate
 
 ### 3. Global Route Visualization
 
-* Display flight routes between a selected departure and arrival airport
-* Supports:
-
-  * Direct routes
-  * Multi-hop (connecting) routes
-* Color-coded markers for:
-
-  * Departure airport
-  * Arrival airport
-  * Connecting airports
+* Display flight routes between selected departure and arrival airports
+* Supports both direct and connecting routes
+* Color-coded markers for departure, arrival, and connecting airports
 
 ### 4. Shortest Path Analysis
 
-* Uses graph algorithms to compute:
-
-  * Shortest route between two airports
-  * Multiple shortest path alternatives
-* Displays routes using IATA airport codes
+* Compute shortest routes using graph algorithms (Dijkstra)
+* Multiple shortest path alternatives
+* Display routes using IATA airport codes
 
 ### 5. Network Efficiency Analysis
 
-* Evaluates computational performance of:
+* Evaluate computational performance of shortest path and minimum spanning tree (MST) calculations
+* Reports execution times, total nodes, and edges in the network
 
-  * Shortest path (Dijkstra)
-  * Minimum Spanning Tree (MST)
-* Reports:
+---
 
-  * Execution times
-  * Total number of nodes and edges in the network
+## 🖼️ Screenshots
+* Airport Directory view
+  <img width="1915" height="905" alt="image" src="https://github.com/user-attachments/assets/ea6ef4a4-e4f8-4bdd-9dd1-70fd07a5cae2" />
 
+* Country-wise airport map
+  <img width="1912" height="939" alt="image" src="https://github.com/user-attachments/assets/0f7a4159-cd8f-4ed7-9b14-64493b77902a" />
+  <img width="1919" height="960" alt="image" src="https://github.com/user-attachments/assets/73ba86a0-e669-4f61-81e6-f4d3dc127e76" />
+  
+* Shortest path analysis
+  <img width="1897" height="892" alt="image" src="https://github.com/user-attachments/assets/97191aca-5118-44df-b21c-6848c75eb0cc" />
+
+* flight path
+  <img width="1906" height="961" alt="image" src="https://github.com/user-attachments/assets/291b64c3-03d4-4b0f-bb68-86869bb237c9" />
+
+* Network efficiency metrics
+<img width="1904" height="678" alt="image" src="https://github.com/user-attachments/assets/13538897-d949-4780-a2b9-e5310cdb6875" />
+
+* Airports connections across the world
+ <img width="1238" height="643" alt="image" src="https://github.com/user-attachments/assets/8f299b58-01a7-49e7-b1da-0a454e995a43" />
+* shortest path finder (graph algorithms)
+ <img width="1303" height="678" alt="image" src="https://github.com/user-attachments/assets/f7c78230-86c5-4bbd-bcd1-18b3b14517dc" />
 ---
 
 ## 🧠 Technical Overview
 
 ### Architecture
 
-* Airports and routes are modeled as a **graph network**
+* Airports and routes modeled as a **graph network**
 * Nodes represent airports (IATA codes)
 * Edges represent flight routes
 * Network analysis performed using **NetworkX**
@@ -67,14 +79,8 @@ Built with **Python, NetworkX, Folium, and Streamlit**, this project demonstrate
 
 ### Data Sources
 
-The application uses CSV datasets for:
-
-* Airlines
-* Airplanes
-* Airports
-* Routes
-
-(Compatible with standard OpenFlights-style datasets)
+* CSV datasets for airlines, airplanes, airports, and routes
+* Compatible with standard **OpenFlights-style datasets**
 
 ---
 
@@ -106,28 +112,26 @@ The application uses CSV datasets for:
 
 ## ▶️ How to Run the Application
 
-### 1. Install dependencies
+1. Install dependencies:
 
 ```bash
 pip install streamlit pandas networkx folium streamlit-folium
 ```
 
-### 2. Run the Streamlit app
+2. Run the Streamlit app:
 
 ```bash
 streamlit run streamlit_airport_analysis.py
 ```
 
-### 3. Open in browser
-
-Streamlit will automatically open the application in your default browser.
+3. Open in your browser — Streamlit will launch automatically.
 
 ---
 
 ## 📊 Use Cases
 
 * Transportation network analysis
-* Aviation route optimization studies
+* Aviation route optimization
 * Graph theory demonstrations
 * Data visualization portfolios
 * Educational and research applications
@@ -145,19 +149,14 @@ Streamlit will automatically open the application in your default browser.
 
 ## 📌 Future Improvements
 
-* Add weighted routes (distance, cost, time)
+* Add weighted routes (distance, cost, or time)
 * Integrate real-time flight data APIs
 * Persist graph data in a database
 * Deploy on cloud infrastructure
-* Add dashboard-level analytics
+* Add dashboard-level analytics and interactive charts
 
 ---
 
 ## 👤 Author
 
-Built by a **Data Engineer / Computer Science (AI & ML) graduate** with a focus on real-world data systems, network analysis, and interactive data applications.
-
----
-
-
-
+Built by a  Computer Science (AI & ML) graduate**, specializing in real-world data systems, network analysis, and interactive data applications.
